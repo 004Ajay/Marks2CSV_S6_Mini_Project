@@ -1,0 +1,1 @@
+python -u "d:\AJAYMON\AJAY\Programming\Auto_Excel_Mark_Entry\Codes\CV_Tesseract\working_final\extractor_main_usingSampleImage\main.py"
