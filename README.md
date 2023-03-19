@@ -9,6 +9,9 @@
 
 # Auto Excel Mark Entry
 
+* [code](https://github.com/004Ajay/Auto_Excel_Mark_Entry/blob/main/Codes/image%20to%20table/big%20model_test.py)
+
+
 <!-- 
 #### This is not exactly an automated data entry software, but it is a telegram bot linked application to make (pre-customized) Excel sheet out of Mark sheet (uploaded as PDF)
 
