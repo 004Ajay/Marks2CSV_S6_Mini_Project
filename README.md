@@ -5,11 +5,11 @@
 
 <!-- ---------------------------------------------------  -->
 
-## _DELETE COMMITS BEFORE FINAL RELEASE, AS IT CONTAIN `BOT TOKEN`_
-
 <br>
 
 # Auto Excel Mark Entry
+
+<!-- 
 #### This is not exactly an automated data entry software, but it is a telegram bot linked application to make (pre-customized) Excel sheet out of Mark sheet (uploaded as PDF)
 
 <br>
@@ -25,12 +25,10 @@ Click the drop down to see contents
 [Why not a `WhatsApp Bot`?](#why-not-a-whatsapp-bot)
 
 
-
-<!-- 
 [More Detailed Working](#More-Detailed-Working)
 
 [Vishnuprasad KG](https://github.com/VISHNUPRASAD-K-G)
--->
+
 
 </details>
 
@@ -56,8 +54,10 @@ WhatsApp also has good features of BOTS. But if we need to build a bot we need:
 * A separate mobile number to start WhatsApp Business account
 * WhatsApp Business API is paid
 * Lack of functionalities & developer support
-* Centralized, owned ny Meta Platforms (Facebook)
+* Centralized, owned by Meta Platforms (Facebook)
 
 <br>
 
 ---
+
+-->
