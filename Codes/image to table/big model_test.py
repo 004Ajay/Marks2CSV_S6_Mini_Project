@@ -21,10 +21,10 @@ for i in range(len(images)):
     cropped_img = img.crop((150, height / 2 + 50, 1600, height - 300)) # left, top, right, bottom
     cropped_img.save(f"D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/temp/ima{i}.jpg")
     
-    img = np.array(cropped_img)
+    # img = np.array(cropped_img)
 
     # Convert the image to grayscale
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    # gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
     # # Apply thresholding to make the black lines more black and white areas more white
     # thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
@@ -37,7 +37,7 @@ for i in range(len(images)):
     # kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (2,2))
     # dilated = cv2.dilate(closed, kernel, iterations=1)
     
-    cv2.imwrite(f"D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/temp/ima{i}.jpg", gray)
+    # cv2.imwrite(f"D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/temp/ima{i}.jpg", gray)
 
 # ----------------------------------------------------------------------------------------------------------------------------------    
 
