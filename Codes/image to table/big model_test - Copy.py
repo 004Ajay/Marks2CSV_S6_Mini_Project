@@ -1,12 +1,10 @@
-## added if case for handling list index out of range error
-
-
 import time
 st = time.time()
 
 from img2table.document import Image
 from img2table.ocr import PaddleOCR
 import pandas as pd
+import io
 from pdf2image import convert_from_path
 
 from PIL import Image as PIL_Image, ImageDraw
@@ -20,37 +18,17 @@ for i in range(len(images)):
     img = images[i]
     _, height = img.size
     cropped_img = img.crop((150, height / 2 + 50, 1600, height - 300)) # left, top, right, bottom
-    cropped_img.save(f"D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/temp/ima{i}.jpg")
+    # cropped_img.save(f"D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/temp/ima{i}.jpg") # To save cropped image
     
-    # img = np.array(cropped_img)
-
-    # Convert the image to grayscale
-    # gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
-    # # Apply thresholding to make the black lines more black and white areas more white
-    # thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
-
-    # # Apply morphological operations to further enhance the image
-    # kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3,3))
-    # closed = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
-
-    # # Apply dilation to make the lines thicker
-    # kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (2,2))
-    # dilated = cv2.dilate(closed, kernel, iterations=1)
+    img_bytes=io.BytesIO()
+    cropped_img.save(img_bytes, format='JPEG')
+    img_bytes.seek(0)
     
-    # cv2.imwrite(f"D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/temp/ima{i}.jpg", gray)
-
-# ----------------------------------------------------------------------------------------------------------------------------------    
-
-for i in range(len(images)):
     ## Image opening & performing OCR
     paddle_ocr = PaddleOCR(lang="en")
-    src = f"D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/temp/ima{i}.jpg"
 
-    doc = Image(src, dpi=200)
+    doc = Image(img_bytes, dpi=200)
     extracted_tables = doc.extract_tables(ocr=paddle_ocr, implicit_rows=True, min_confidence=50)
-
-
 
     ############## ----------- UNCOMMENT THIS ONLY FOR SAVING TABLE IMAGE WITH RED OUTLINE ----------- ##############
 
@@ -70,8 +48,6 @@ for i in range(len(images)):
 
 
     ############## ----------- UNCOMMENT THIS ONLY FOR SAVING TABLE IMAGE WITH RED OUTLINE ----------- ##############
-
-
 
     df = extracted_tables[0].df
     df = df.iloc[1:, 1:] # deleting first row and column
@@ -97,21 +73,9 @@ for i in range(len(images)):
             i+=1
 
 ## Dictionary to dataframe & it's preprocessing
-
-### The df output may have 'None' values but they're actually NaN, so they won't come in exported CSV file
-# dict_df = pd.DataFrame(my_dict)
-# col_name = dict_df.columns[(dict_df == 'None').all()] # finding the column with "None" word
-# dict_df = dict_df.drop(col_name, axis=1) # delete the identified columns
-# dict_df = dict_df.replace(to_replace="None", value=np.nan) # Replacing all "None" to NaN, which will be empty when converted to CSV
-# dict_df = dict_df.assign(sum=dict_df.sum(axis=1)) # create a new column "row_sum" with the sum of each row
-# dict_df = dict_df.assign(Sum_more_than_50=dict_df.apply(lambda x: 'Error' if x['sum'] > 50 else '', axis=1)) # add a new column "error" with "Error" if row_sum is greater than 50
-
-# print(dict_df)
-
 dict_df = pd.DataFrame(my_dict)
 
 dict_df.to_csv("D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/unprocessed_dict.csv", index=False)
-
 
 # col_name = dict_df.columns[(dict_df == 'None').all()] # finding the column with "None" word
 # dict_df = dict_df.drop(col_name, axis=1) # delete the identified columns
@@ -125,8 +89,6 @@ dict_df.fillna(0, inplace=True)
 
 print(dict_df)
 
-
-# saving dict as csv
-dict_df.to_csv("D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/MP2.csv", index=False)
+dict_df.to_csv("D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/MP2.csv", index=False) # saving dict as csv
 
 print(time.time() - st)
