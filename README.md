@@ -9,7 +9,9 @@
 
 # Auto Excel Mark Entry
 
-* [code](https://github.com/004Ajay/Auto_Excel_Mark_Entry/blob/main/Codes/image%20to%20table/big%20model_test.py)
+* [Big Model - Input PDF, Output CSV](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/image%20to%20table/big%20model.ipynb)
+
+* [Cell Extraction](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/cell_extraction/cell_extraction.ipynb)
 
 
 <!-- 
