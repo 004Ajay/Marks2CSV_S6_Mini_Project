@@ -17,7 +17,10 @@
 
 * [Our Dataset](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/cell_extraction/cell_extraction.ipynb) 
 
-edit here //////////////// ----------------- ###############
+* [Mixed Dataset Zip](https://github.com/004Ajay/S6_Mini_Project/blob/main/dataset/Mixed_Marks_Dataset.zip)
+
+
+
 
 <!-- 
 #### This is not exactly an automated data entry software, but it is a telegram bot linked application to make (pre-customized) Excel sheet out of Mark sheet (uploaded as PDF)
