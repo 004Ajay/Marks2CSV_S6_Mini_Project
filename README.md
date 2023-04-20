@@ -57,7 +57,7 @@ Click the drop down to see contents
 ## DataFrame Preprocessing
 
 <p align="center">
-<img src="Assets/DF_Preprocessing.png" title = "DataFrame Preprocessing" height='640' width='1395'></p>
+<img src="Assets/DF_Preprocessing.png" title = "DataFrame Preprocessing" height='426' width='930'></p>
 
 
 <br>
