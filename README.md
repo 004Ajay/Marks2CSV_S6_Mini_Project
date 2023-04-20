@@ -48,7 +48,7 @@ Click the drop down to see contents
 
 <br>
 
-## Working of System
+## Brief Working
 
 <p align="center">
 <img src="Assets/MP_Working.png" title = "Working of System" height='287' width='834'></p>
@@ -58,6 +58,12 @@ Click the drop down to see contents
 
 <p align="center">
 <img src="Assets/DF_Preprocessing.png" title = "DataFrame Preprocessing" height='426' width='930'></p>
+
+
+## Full Working
+
+<p align="center">
+<img src="Assets/Full_Working.png" title = "DataFrame Preprocessing" height='973' width='863'></p>
 
 
 <br>
