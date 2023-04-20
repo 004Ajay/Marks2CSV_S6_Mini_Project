@@ -48,12 +48,16 @@ Click the drop down to see contents
 
 <br>
 
+## Working of System
+
 <p align="center">
 <img src="Assets/MP_Working.png" title = "Working of System" height='287' width='834'></p>
 
 
+## DataFrame Preprocessing
 
-
+<p align="center">
+<img src="Assets/DF_Preprocessing.png" title = "DataFrame Preprocessing" height='256' width='553'></p>
 
 
 <br>
