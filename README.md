@@ -7,8 +7,6 @@
 
 <br>
 
-<br>
-
 Click the drop down to see contents
 <details>
 <summary> Contents </summary>
@@ -19,19 +17,29 @@ Click the drop down to see contents
 
 <!-- [More Detailed Working](#More-Detailed-Working) -->
 
+[Programs](#Programs)
+
+[Datasets](#Datasets)
+
+[Brief Working](#Brief-Working)
+
+[Full Working](#Full-Working)
+
 [Creators](#Creators)
 
 </details>
 
+---
+
 <br>
 
-# Programs
+## Programs
 
 * [Big Model - Input PDF, Output CSV](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/image%20to%20table/big%20model.ipynb)
 
 * [Cell Extraction](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/cell_extraction/cell_extraction.ipynb)
 
-# Datasets
+## Datasets
 
 * [Our Dataset](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/cell_extraction/cell_extraction.ipynb) 
 
@@ -53,18 +61,14 @@ Click the drop down to see contents
 <p align="center">
 <img src="Assets/MP_Working.png" title = "Working of System" height='287' width='834'></p>
 
-
-## DataFrame Preprocessing
-
-<p align="center">
-<img src="Assets/DF_Preprocessing.png" title = "DataFrame Preprocessing" height='426' width='930'></p>
-
+---
 
 ## Full Working
 
 <p align="center">
 <img src="Assets/Full_Working.png" title = "DataFrame Preprocessing" height='973' width='863'></p>
 
+---
 
 <br>
 
@@ -82,22 +86,22 @@ Click the drop down to see contents
 <br>
 
 <!-- 
-#### This is not exactly an automated data entry software, but it is a telegram bot linked application to make (pre-customized) Excel sheet out of Mark sheet (uploaded as PDF)
-
 ---
 
 ## Working of the App
 
-* User starts the telegram bot (`bot_name`) → click or tpye `/start`
-* User sends the `PDF file` having front pages of Stundent's Marksheet
-* User waits to receive the `CSV file` containing students name, marks entered in respective columns 
-
-
-<br>
+* User starts the telegram bot (`bot_name`) → click or type `/start`
+* User sends the `PDF file` having front pages of Student's Marksheet
+* User waits to receive the `CSV file` containing students marks entered in respective columns
+* Names should be entered manually
 
 ---
 
-## Why not a `WhatsApp Bot`?
+<br>
+
+## FAQ
+
+### Why not a `WhatsApp Bot`?
 
 WhatsApp also has good features of BOTS. But if we need to build a bot we need:
 
