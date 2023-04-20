@@ -49,7 +49,7 @@ Click the drop down to see contents
 <br>
 
 <p align="center">
-<img src="Assets/MP_Working.png" title = "Working of System" height='200'></p>
+<img src="Assets/MP_Working.png" title = "Working of System" height='287' width='834'></p>
 
 
 
