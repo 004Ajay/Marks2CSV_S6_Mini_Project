@@ -7,57 +7,101 @@
 
 <br>
 
-# Programs
+Click the drop down to see contents
+<details>
+<summary> Contents </summary>
+
+<!-- [Working of the App](#Working-of-the-App) -->
+
+<!-- [Why not a `WhatsApp Bot`?](#why-not-a-whatsapp-bot) -->
+
+<!-- [More Detailed Working](#More-Detailed-Working) -->
+
+[Programs](#Programs)
+
+[Datasets](#Datasets)
+
+[Brief Working](#Brief-Working)
+
+[Full Working](#Full-Working)
+
+[Creators](#Creators)
+
+</details>
+
+---
+
+<br>
+
+## Programs
 
 * [Big Model - Input PDF, Output CSV](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/image%20to%20table/big%20model.ipynb)
 
 * [Cell Extraction](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/cell_extraction/cell_extraction.ipynb)
 
-# Datasets
+## Datasets
 
 * [Our Dataset](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/cell_extraction/cell_extraction.ipynb) 
 
-edit here //////////////// ----------------- ###############
+* [Mixed Dataset Zip](https://github.com/004Ajay/S6_Mini_Project/blob/main/dataset/Mixed_Marks_Dataset.zip)
 
-<!-- 
-#### This is not exactly an automated data entry software, but it is a telegram bot linked application to make (pre-customized) Excel sheet out of Mark sheet (uploaded as PDF)
+
+---
 
 <br>
 
-Click the drop down to see contents
-<details>
-<summary> Contents </summary>
+* The Problem - Our teachers of SJCET Palai are wasting a good amount of their time entering marks scored by students on individual questions in an exam to excel sheets.
 
-### Click any heading below to go to it
+* The Solution - We need to automate the task of entering the marks, for that we use a combination of detection, extraction & recognition algorithms
 
-[Working of the App](#Working-of-the-App)
+<br>
 
-[Why not a `WhatsApp Bot`?](#why-not-a-whatsapp-bot)
+## Brief Working
 
+<p align="center">
+<img src="Assets/MP_Working.png" title = "Working of System" height='287' width='834'></p>
 
-[More Detailed Working](#More-Detailed-Working)
+---
+
+## Full Working
+
+<p align="center">
+<img src="Assets/Full_Working.png" title = "DataFrame Preprocessing" height='973' width='863'></p>
+
+---
+
+<br>
+
+## Creators
+
+[Ajay T Shaju](https://github.com/004Ajay)
+
+[Emil Saj Abraham](https://github.com/Emilsabrhm)
+
+[Justin Thomas Jo](https://github.com/Juz-Tom-J)
 
 [Vishnuprasad KG](https://github.com/VISHNUPRASAD-K-G)
 
 
-</details>
-
 <br>
 
+<!-- 
 ---
 
 ## Working of the App
 
-* User starts the telegram bot (`bot_name`) → click or tpye `/start`
-* User sends the `PDF file` having front pages of Stundent's Marksheet
-* User waits to receive the `CSV file` containing students name, marks entered in respective columns 
-
-
-<br>
+* User starts the telegram bot (`bot_name`) → click or type `/start`
+* User sends the `PDF file` having front pages of Student's Marksheet
+* User waits to receive the `CSV file` containing students marks entered in respective columns
+* Names should be entered manually
 
 ---
 
-## Why not a `WhatsApp Bot`?
+<br>
+
+## FAQ
+
+### Why not a `WhatsApp Bot`?
 
 WhatsApp also has good features of BOTS. But if we need to build a bot we need:
 

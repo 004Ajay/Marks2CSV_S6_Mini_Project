@@ -3,8 +3,6 @@ I have an idea to make automated scanning and adding marks to an excel sheet usi
 our teachers are wasting some 4h of their productive time entering this marks to excel sheets. so i am planning to make an android application(in flutter) to put the scanning model made using 
 
 
-dynamic_col_addition_pandas
-
 
 I have an idea to make automated scanning and adding marks to an excel sheet using OCR & spreadsheet
 
@@ -25,10 +23,6 @@ Exisiting Things
 
 
 Bot_Name: SM2E_Bot, SJCET Marks to Excel Bot
-
-
-Pytessearct on Heroku: https://towardsdatascience.com/deploy-python-tesseract-ocr-on-heroku-bbcc39391a8d
-
 
 
 Q) How to create a bot in telegram and host it using github
