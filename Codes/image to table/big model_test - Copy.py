@@ -12,7 +12,7 @@ from PIL import Image as PIL_Image, ImageDraw
 # Dictionary for storing marks of each papers
 my_dict = {'1a': [], '1b': [], '1c': [], '2a': [], '2b': [], '2c': [], '3a': [], '3b': [], '3c': [], '4a': [], '4b': [], '4c': [], '5a': [], '5b': [], '5c': [], '6a': [], '6b': [], '6c': [], '7a': [], '7b': [], '7c': [], '8a': [], '8b': [], '8c': [], '9a': [], '9b': [], '9c': [], '10a': [], '10b': [], '10c': [], '11a': [], '11b': [], '11c': [], '12a': [], '12b': [], '12c': []}
 
-images = convert_from_path('D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/MP_pdf2.pdf') # change or give PDF name here....................new_exm.pdf, MP_pdf1.pdf
+images = convert_from_path('D:/AJAYMON/AJAY/Programming/S6_Mini_Project/Codes/image to table/Jacob sir COA S4.pdf') # change or give PDF name here....................new_exm.pdf, MP_pdf1.pdf
 
 for i in range(len(images)):
     img = images[i]
@@ -75,7 +75,7 @@ for i in range(len(images)):
 ## Dictionary to dataframe & it's preprocessing
 dict_df = pd.DataFrame(my_dict)
 
-dict_df.to_csv("D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/unprocessed_dict.csv", index=False)
+# dict_df.to_csv("D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/unprocessed_dict.csv", index=False)
 
 # col_name = dict_df.columns[(dict_df == 'None').all()] # finding the column with "None" word
 # dict_df = dict_df.drop(col_name, axis=1) # delete the identified columns
@@ -89,6 +89,6 @@ dict_df.fillna(0, inplace=True)
 
 print(dict_df)
 
-dict_df.to_csv("D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/MP2.csv", index=False) # saving dict as csv
+dict_df.to_csv("D:/AJAYMON/AJAY/Programming/S6_Mini_Project/Codes/image to table/jacob_sir.csv", index=False) # saving dict as csv
 
 print(time.time() - st)
