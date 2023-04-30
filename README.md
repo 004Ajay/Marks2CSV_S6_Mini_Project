@@ -87,6 +87,15 @@ Click the drop down to see contents
 
 <br>
 
+## CNN Model Architecture
+
+<p align="center">
+<img src="Assets/model.png" title = "Model Architecture" height='1325' width='627'></p>
+
+---
+
+<br>
+
 ## Creators
 
 [Ajay T Shaju](https://github.com/004Ajay)
