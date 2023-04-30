@@ -21,6 +21,8 @@ Click the drop down to see contents
 
 [Datasets](#Datasets)
 
+[Problem And Solution](#Problem--Solution)
+
 [Brief Working](#Brief-Working)
 
 [Full Working](#Full-Working)
