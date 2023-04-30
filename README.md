@@ -39,6 +39,8 @@ Click the drop down to see contents
 
 * [Cell Extraction](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/cell_extraction/cell_extraction.ipynb)
 
+* [Image Resizer](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/resize_image.ipynb)
+
 ## Datasets
 
 * [Our Dataset](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/cell_extraction/cell_extraction.ipynb) 
