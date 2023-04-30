@@ -28,6 +28,8 @@ Click the drop down to see contents
 
 [Full Working](#Full-Working)
 
+[Model Architecture](#CNN-Model-Architecture)
+
 [Creators](#Creators)
 
 </details>
