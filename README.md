@@ -1,7 +1,7 @@
 <p align="center">
-<img src="https://img.icons8.com/officel/384/null/import-csv.png" title = "Database / SQL" height='200'></p>
+<img src="https://img.icons8.com/officel/384/null/import-csv.png" title = "Database / SQL" height='100'></p>
 
-<h1 align="center"> MARKS 2 EXCEL </h1>
+<b><h1 align="center"> MARKS 2 EXCEL </h1></b>
 
 <!-- ---------------------------------------------------  -->
 
@@ -41,6 +41,10 @@ Click the drop down to see contents
 
 * [Image Resizer](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/resize_image.ipynb)
 
+---
+
+<br>
+
 ## Datasets
 
 * [Our Dataset](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/cell_extraction/cell_extraction.ipynb) 
@@ -52,9 +56,13 @@ Click the drop down to see contents
 
 <br>
 
+## Problem & Solution
+
 * The Problem - Our teachers of SJCET Palai are wasting a good amount of their time entering marks scored by students on individual questions in an exam to excel sheets.
 
 * The Solution - We need to automate the task of entering the marks, for that we use a combination of detection, extraction & recognition algorithms
+
+---
 
 <br>
 
@@ -64,6 +72,8 @@ Click the drop down to see contents
 <img src="Assets/MP_Working.png" title = "Working of System" height='287' width='834'></p>
 
 ---
+
+<br>
 
 ## Full Working
 
@@ -84,8 +94,6 @@ Click the drop down to see contents
 
 [Vishnuprasad KG](https://github.com/VISHNUPRASAD-K-G)
 
-
-<br>
 
 <!-- 
 ---
