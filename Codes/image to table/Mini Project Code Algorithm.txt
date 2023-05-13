@@ -1,0 +1,26 @@
+step-by-step algorithm for the mini project code:
+
+1. Import the following libraries:
+	- img2table.document
+	- img2table.ocr
+	- pandas
+	- pdf2image
+	- PIL
+	- io
+
+2. Create a dictionary to store the marks of each paper. The keys of the dictionary should be the question number (1a, 1b,..,12c), and the values should be lists of marks.
+
+3. Convert the PDF file to images using the pdf2image library.
+
+4. For each image:
+	- Crop the image to the area containing the marks.
+	- Perform OCR on the image using an ocr program of ocr file from img2table library.
+	- Extract the table from the OCR results.
+	- Drop the first, last row and first column of the table.
+	- Flatten the table into a list of marks.
+	- Add the marks to the dictionary.
+	- Convert the dictionary to a DataFrame.
+
+5. Drop any columns in the DataFrame that contain the same value from start to end.
+
+6. Save the DataFrame to a CSV file.

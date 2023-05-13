@@ -1,19 +1,15 @@
-import time
-st = time.time()
-
 from img2table.document import Image
 from img2table.ocr import PaddleOCR
 import pandas as pd
-import io
 from pdf2image import convert_from_path
-
 from PIL import Image as PIL_Image, ImageDraw
+import io
 
 # Dictionary for storing marks of each papers
 my_dict = {'1a': [], '1b': [], '1c': [], '2a': [], '2b': [], '2c': [], '3a': [], '3b': [], '3c': [], '4a': [], '4b': [], '4c': [], '5a': [], '5b': [], '5c': [], '6a': [], '6b': [], '6c': [], '7a': [], '7b': [], '7c': [], '8a': [], '8b': [], '8c': [], '9a': [], '9b': [], '9c': [], '10a': [], '10b': [], '10c': [], '11a': [], '11b': [], '11c': [], '12a': [], '12b': [], '12c': []}
 
-images = convert_from_path('D:/AJAYMON/AJAY/Programming/S6_Mini_Project/Codes/image to table/Jacob sir COA S4.pdf') # change or give PDF name here....................new_exm.pdf, MP_pdf1.pdf
-
+images = convert_from_path("D:/AJAYMON/AJAY/Programming/S6_Mini_Project/Codes/image to table/MP_pdf2.pdf") # change or give PDF name here
+ext_dict = {}
 for i in range(len(images)):
     img = images[i]
     _, height = img.size
@@ -56,39 +52,53 @@ for i in range(len(images)):
     ## Flattening & adding marks to my_dict
     arr = df.to_numpy()
     flat = arr.flatten(order='F') # flattening column-wise
-    cell_vals = [i for i in flat]
+    
+    cell_vals = [0 if item is None else item for item in flat] # Changing all None to 0 in mark cells
 
     flat_len = len(cell_vals)
+    ext_dict[i+1] = flat_len
 
     print(i+1, "-", flat_len) # comment this --------------------------------------------------
 
-    if flat_len < 36:
-        # my_dict = {key: None for key in my_dict}
-        pass
+    if flat_len == 36: # 36 is the total number of mark cells,  CHECK THIS ////////////////////////////////////////////////////////////////////////
+        for key, value in zip(my_dict.keys(), cell_vals):
+            my_dict[key].append(value) # Adding values to dictionary
     else:
-        # Adding values to dictionary
-        i = 0
-        for key in my_dict:
-            my_dict[key].append(cell_vals[i])
-            i+=1
+        for key in my_dict.keys():
+            my_dict[key].append(0) # Adding values to dictionary
 
-## Dictionary to dataframe & it's preprocessing
+print(my_dict)
+
 dict_df = pd.DataFrame(my_dict)
 
-# dict_df.to_csv("D:/AJAYMON/AJAY/Programming/Auto_Excel_Mark_Entry/Codes/image to table/unprocessed_dict.csv", index=False)
+for column in dict_df.columns:
+    if len(dict_df[column].unique()) == 1: # column contains the same value (1 value only) from start to end
+        dict_df = dict_df.drop(column, axis=1) # Drop the column
+
+# Dictionary to dataframe & it's preprocessing
+# import numpy as np
+
+# dict_df = pd.DataFrame(my_dict)
+
+# dict_copy = dict_df
 
 # col_name = dict_df.columns[(dict_df == 'None').all()] # finding the column with "None" word
 # dict_df = dict_df.drop(col_name, axis=1) # delete the identified columns
 # dict_df = dict_df.replace(to_replace="None", value=np.nan) # Replacing all "None" to NaN, which will be empty when converted to CSV
+
 # valid_cols = dict_df.select_dtypes(include=np.number).columns # Select only the valid columns with numeric data types
 # dict_df = dict_df.assign(sum=dict_df[valid_cols].sum(axis=1)) # create a new column "row_sum" with the sum of each row
 # dict_df = dict_df.assign(Sum_more_than_50=dict_df.apply(lambda x: 'Error' if x['sum'] > 50 else '', axis=1)) # add a new column "error" with "Error" if row_sum is greater than 50
 
-dict_df = dict_df.dropna(axis=1, how='all')
-dict_df.fillna(0, inplace=True)
+# dict_df = dict_df.dropna(axis=1, how='all')
+# dict_df.fillna(0, inplace=True)
 
-print(dict_df)
+print(ext_dict)
 
-dict_df.to_csv("D:/AJAYMON/AJAY/Programming/S6_Mini_Project/Codes/image to table/jacob_sir.csv", index=False) # saving dict as csv
+for key, value in ext_dict.items(): # for finding the papers with table detection error
+    if value != 36:
+        print(key, "-", value)
 
-print(time.time() - st)
+print(dict_df)        
+
+dict_df.to_csv("D:/AJAYMON/AJAY/Programming/S6_Mini_Project/Codes/image to table/36_cell_from_py_file.csv", index=False)
