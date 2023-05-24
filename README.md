@@ -42,7 +42,7 @@ Click the drop down to see contents
 
 * [Big Model - Input PDF, Output CSV](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/image%20to%20table/big%20model.ipynb)
 
-* [Cell Extraction](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/cell_extraction/cell_extraction.ipynb)
+* [Cell Extraction](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Cell%20Extraction/cell_extraction.ipynb)
 
 * [Image Resizer](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/resize_image.ipynb)
 
