@@ -42,11 +42,9 @@ Click the drop down to see contents
 
 * Big Model - Program that is able to convert a complete PDF file to CSV
 
-* Base Model - Program that run on a single paper - used for Prototyping & Testing the approach
+* Base Model - Program that runs on a single paper - used for Prototyping & Testing the approach
 
 * [Big Model - Input PDF, Output CSV](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Image%202%20Table/big%20model%20-%2036%20CELL%20PROBLEM%20SOLVED.ipynb)
-
-* [Big Model - 36 Cell Problem Solved](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Image%202%20Table/big%20model%20-%2036%20CELL%20PROBLEM%20SOLVED.ipynb)
 
 * [Neural Network - Training & Testing](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Neural%20Network/Train_Model_Final.ipynb)
 
@@ -64,7 +62,7 @@ Click the drop down to see contents
 
 ## Datasets
 
-* File in ZIP format
+* Files in ZIP format
 
     * [Training Set](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/training_set.rar)
 
