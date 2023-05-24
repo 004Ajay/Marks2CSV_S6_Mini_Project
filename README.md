@@ -40,15 +40,19 @@ Click the drop down to see contents
 
 ## Programs
 
-* [Big Model - Input PDF, Output CSV](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Image%202%20Table/big%20model.ipynb)
+* Big Model - Program that is able to convert a complete PDF file to CSV
 
-* [Neural Network Training](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Neural%20Network/Train_Model_Final.ipynb)
+* Base Model - Program that run on a single paper - used for Prototyping & Testing the approach
 
-* [Base Model](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Image%202%20Table/base%20model%20-%20single%20paper%20from%20start%20to%20end%20--%20LATEST.ipynb)
+* [Big Model - Input PDF, Output CSV](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Image%202%20Table/big%20model%20-%2036%20CELL%20PROBLEM%20SOLVED.ipynb)
 
-* [Big Model 36 Cell Problem Solved](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Image%202%20Table/big%20model%20-%2036%20CELL%20PROBLEM%20SOLVED.ipynb)
+* [Big Model - 36 Cell Problem Solved](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Image%202%20Table/big%20model%20-%2036%20CELL%20PROBLEM%20SOLVED.ipynb)
 
-* [Cell Extraction](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Cell%20Extraction/cell_extraction.ipynb)
+* [Neural Network - Training & Testing](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Neural%20Network/Train_Model_Final.ipynb)
+
+* [Base Model - using our CustomOCR](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Image%202%20Table/base%20model%20-%20single%20paper%20from%20start%20to%20end%20--%20LATEST.ipynb)
+
+* [Cell Extraction Program](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Cell%20Extraction/cell_extraction.ipynb)
 
 * [Image Resizer](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Cell%20Extraction/resize_image.ipynb)
 
@@ -60,19 +64,19 @@ Click the drop down to see contents
 
 ## Datasets
 
-* [Our Dataset](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Cell%20Extraction/cell_extraction.ipynb) 
+* File in ZIP format
 
-* [College Answer Sheet](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/College_Answer_Sheet_Dataset.zip)
+    * [Training Set](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/training_set.rar)
 
-* [Kaggle Dataset](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/Kaggle_Dataset.zip)
+    * [Testing Set](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/testing_set.zip)
 
-* [Half Marks From Answer Sheet](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/Ans_Sheet_Half_Marks.zip)
+    * [Kaggle Dataset](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/Kaggle_Dataset.zip)
+    
+    * [College Answer Sheet Dataset](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/College_Answer_Sheet_Dataset.zip)
 
-* [Mixed Dataset Zip](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/Mixed_Marks_Dataset.zip)
+    * [Half Marks - College Answer Sheet](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/Ans_Sheet_Half_Marks.zip)
 
-* [Dataset For Testing Zip](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/testing_set.zip)
-
-* [Dataset For Training RAR](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/training_set.rar)
+    * [Mixed Dataset (College & Kaggle)](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/Mixed_Marks_Dataset.zip)
 
 
 ---
