@@ -44,7 +44,7 @@ Click the drop down to see contents
 
 * Base Model - Program that runs on a single paper - used for Prototyping & Testing the approach
 
-* [Big Model - Input PDF, Output CSV](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Image%202%20Table/big%20model%20-%2036%20CELL%20PROBLEM%20SOLVED.ipynb)
+* [Big Model - Input PDF, Output CSV](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Image%202%20Table/big%20model%20using%20customOCR%20--LATEST.ipynb)
 
 * [Neural Network - Training & Testing](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Neural%20Network/Train_Model_Final.ipynb)
 
