@@ -13,17 +13,19 @@ def index():
 
 @app.route('/realtime', methods=['POST'])
 def real_time():
-    model = tf.keras.models.load_model("D:/mini project/checking/MP_Final_Model.h5")
+    model = tf.keras.models.load_model("D:/AJAYMON/AJAY/Programming/S6_Mini_Project/Codes/Neural Network/MP_Latest_Model.h5")
     image_list = []
-    am = []
+    dict_ret_df_lst = []
 
-    def dataframe(am):
-        df = pd.DataFrame(am[0])
+    def dataframe(dict_ret_df_lst):
+        df = pd.DataFrame(dict_ret_df_lst[0])
+
         # Remove columns with all zeros
         df1 = df.loc[:, (df != 0).any(axis=0)]
         df1['Sum'] = df1.sum(1)
-        #df1.to_csv("D:/mini project/csv/data2.csv", index=False)
-        #print("saved successfully")
+
+        df1.insert(0, 'Name', '') # Add empty colum, Name to left of df
+        df1.insert(0, 'Roll No', '')
         return df1
 
     def capture_images():
@@ -34,6 +36,8 @@ def real_time():
         while True:
             # Read the current frame from the camera
             ret, frame = cap.read()
+            cv2.putText(frame, "Press \'Enter\' to capture image", (40, 310), cv2.FONT_ITALIC, 0.4, (50, 200, 255), 2)
+            cv2.putText(frame, "Press \'ESC\' to quit", (40, 350), cv2.FONT_ITALIC, 0.4, (50, 200, 255), 2)
 
             # Display the frame in a window called "Real-time Image Capture"
             cv2.imshow("Real-time Image Capture", frame)
@@ -56,10 +60,10 @@ def real_time():
         # Release the camera and close the window
         cap.release()
         cv2.destroyAllWindows()
-        c = return_dictonary(image_list, model)
-        am.append(c)
-        df1 = dataframe(am)
-        return df1
+        return_dict = return_dictonary(image_list, model)
+        dict_ret_df_lst.append(return_dict)
+        final_dataframe = dataframe(dict_ret_df_lst)
+        return final_dataframe
 
     # Call the capture_images() function
     data_frame = capture_images()

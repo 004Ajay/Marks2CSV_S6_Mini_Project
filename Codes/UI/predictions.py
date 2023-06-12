@@ -20,7 +20,7 @@ def return_dictonary(imgs,model):
         extracted_tables = doc.extract_tables(implicit_rows=False, min_confidence=50)
         orddict = extracted_tables[0].content
         img=PIL_Image.open(img_bytes)
-        if len(orddict.keys()) == 5 :#and sum(len(value) for value in orddict.values())== 65:# if the table recognition is correct, the no of rows will be 5
+        if len(orddict.keys()) == 5 and sum(len(value) for value in orddict.values())== 65:# if the table recognition is correct, the no of rows will be 5
             paper_df = cell_extraction_classification_df_return(orddict,img,model)
             marks_for_main_dict = dataframe_postprocessing(paper_df)
 
