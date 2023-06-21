@@ -1,0 +1,38 @@
+\chapter{Proposed Methodology}
+
+
+%\section{Modules}
+
+%The system is divided into three modules :\\
+%(1) Registration\\
+%(2) Request Procedure\\
+%(3) Administration
+\section{Overview of the Proposed System}
+  \section{Block Diagram}
+  
+\subsection{Data Collection}
+\subsection{Feature Extraction}
+\subsection{Classification/Prediction}
+%Registration module consists of procedures for donor registration, blood bank registration and requestor registration. A donor can register to the system either as a verified donor or as a non-verified donor. Non-verified donors create their account by providing their blood group, age and basic contact details. They will get notifications about blood donation camps conducted near them and by donating blood in these camps, their account can be verified by the administrator. Another method to get the account verified is, by submitting a valid doctor certificate which can be considered as a proof of eligibility to donate blood. During the registration procedure location information of donors is collected inorder to perform efficient search for nearby donors when a request is made. Anyone making an account can enter their home location either by manually pinning it in the maps provided, or we can obtain the accurate location by accessing the GPS feature, which is the passive location. Once the request is accepted by the donor, he will be asked permission to share active location via GPS, and then the current location of the donor is forwarded to the requester through the request confirmation mail.
+%\subsection{Private Data}
+\par 
+%\noindent When registering a blood bank, basic details like name and contact details have to be given and certification details needs to be produced to verify the blood bank. Blood banks needs to mention whether there is a hospital integrated with them or not. Particulars of blood available in the blood bank is also collected during the registration procedure. Blood banks must also provide their location information. 
+
+
+%\noindent When a requestor registers his blood requirement in the portal, he needs to provide necessary contact details. The requestor also needs to provide valid doctor certificate to prove the legitimacy of the request. This verification ensures that sensitive data about the donors are not disclosed to malicious users. Thereby ensuring privacy of the donors.
+
+
+%\section{Block Diagram}
+
+
+Blood requests can be raised either by blood banks or by individuals. If the requestor is a blood bank, the procedure is much simple. Since blood banks are already our registered users, the system directly processes the blood request and form a result that contains donors with the searched blood group. Now the system will send notification to all the selected donors. Then we record donor response. If the donor response is to accept the request, the blood requirement is satisfied and, the requestor and donor can contact each other. when a request is rejected by a donor, we will wait for the response from other donors and if no donors accepts the request, the system will inform the requestor to make a new query with other set of selected donors.
+
+\noindent When the requestor is an individual, system has to verify the request to ensure that the requestor is genuine. When an individual logins to the system, his name and contact informations are mandatory. and we use OTP verification to authenticate the request. Inorder to validate the request, the individual has to submit a valid doctor certificate. The doctor certificate can be verified by either the administrator or a verified donor. If the user tries to misuse the system or provide fake documents the individual will be temporarily blocked with prior warning.
+
+
+
+
+\section{Summary}
+
+
+Administrator is responsible for verification of requests and donor accounts. Verification is done by validating the documents uploaded by the users. Notifications about blood donation campaigns sent to users are managed by administrator. The system also provides a search facility to search for the availability of a particular unit of blood in that area, without providing information about donors. Administrator is responsible for maintaining the log of the blood requests satisfied through the system. Donor accounts which are inactive for a period of about six months should be deactivated with prior warning inorder to make sure that search results for requests will list only active donors. Administrator provides donors with the privilage to report fake requests, and the respective requestor will be temporarily blocked by the administrator.

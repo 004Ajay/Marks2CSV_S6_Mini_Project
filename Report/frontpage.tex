@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   This is frontpage.tex file needed for the dmathesis.cls file.  You   %
+%  have to  put this file in the same directory with your thesis files.  %
+%            
+% 
+%                 No Copyright for this file                             % 
+%                 Save your time and enjoy it                            % 
+%                                                                        % 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%           The title page           %%%%%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{roman}
+%\pagenumbering{arabic}
+
+\setcounter{page}{1}
+
+\fancypagestyle{plain}{%
+\fancyfoot[L]{\emph{Department of Artificial Intelligence and Data Science, SJCET Palai}} % except the center
+\fancyfoot[R]{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+}
+
+\newpage
+
+\thispagestyle{empty}
+\begin{center}
+ 
+  {\Large \bf MINIPROJECT REPORT}
+
+ON\\
+  {\large \bf MiniProject Report Title\\ Title}
+
+   \vspace*{1 cm}
+   {\large Submitted by\\ { \bf STUDENT A (REG.NO.)}\\
+   { \bf STUDENT B (REG.NO.)}\\
+    { \bf STUDENT C (REG.NO.)}\\
+   { \bf STUDENT D (REG.NO.)}}\\[-0.6mm]
+  {\large to\\[-0.6mm] the APJ Abdul Kalam Technological University\\[-0.6mm] in partial fulfillment of the requirements for the award of the degree\\[-0.6mm] of\\[-0.6mm] Bachelor of Technology\\[-0.6mm] in\\[-0.6mm] {\bf Artificial Intelligence and Data Science}}
+  %\vspace*{1cm}
+  
+  % Put your university logo here if you wish.
+   \begin{center}
+   \includegraphics[width=0.3\textwidth]{SJCET_logo.jpg}
+   \end{center}
+   \vspace*{-0.5cm}
+  {\LARGE {\bf Department of Artificial Intelligence and Data Science}}\\
+          [-3mm] {\large {\bf St. Joseph's College of Engineering and Technology, Palai}\\
+           [1mm] JUNE :: 2023}
+
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%           The abstract page         %%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+%\addcontentsline{toc}{chapter}{\numberline{}Declaration}
+%\begin{center}
+  %\vspace*{1cm}
+  %\textbf{\large Declaration}
+%\end{center}
+%I undersigned hereby declare that the project report on “An Architectural Framework for System Designby Policy Based System”, submitted for partial fulfillment of the requirements for the award of degreeof Bachelor of Technology of the APJ Abdul Kalam Technological University, Kerala, is a bonafidework done by me under supervision of--------------------------------------------------- This submissionrepresents my ideas in my own words and where ideas or words of others have been included, I haveadequately and accurately cited and referenced the original sources. I also declare that I have adhered toethics of academic honesty and integrity and have not misrepresented or fabricated any data or idea or
+%fact or source in my submission. I understand that any violation of the above will be a cause fordisciplinary action by the institute and/or the University and can also evoke penal action from the sourceswhich have thus not been properly cited or from whom proper permission has not been obtained. Thisreport has not been previously formed the basis for the award of any degree, diploma or similar title ofany other University.\vspace{1.3 cm}\\
+%{\bf Name and Signature of Student}\vspace{5 cm}\\
+%Place:\\
+%Date:
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% The dedication page, of you have one  %%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+\begin{center}
+\normalsize{ST. JOSEPH’S COLLEGE OF ENGINEERING AND TECHNOLOGY, PALAI}\\[0.5cm]
+\normalsize
+ { DEPARTMENT OF ARTIFICIAL INTELLIGENCE AND DATA SCIENCE}\\[1.0cm]% Put your university logo here if you wish.
+   \begin{center}
+   \includegraphics{SJCET_logo.jpg}
+   \end{center}
+{\large CERTIFICATE}\\[1.5cm]
+\end{center}
+\normalsize 
+This is to certify that the report entitled {\bf $"$Title$"$} submitted by { \bf Student A (SJC16CS004), Student B(SJC16CS012), Student C (SJC16CS033), and Student D (SJC16CS033)} to the APJ Abdul Kalam Technological University in partial fulfillment of the requirements for the award of the Degree of Bachelor of Technology in Artificial Intelligence and Data Science is a bonafide record of the project work carried out by them under my guidance and supervision.\vspace{1.3 cm}\\
+{\bf Project Guide}\hspace{8.4 cm}{\bf Project Coordinator}\\
+Mr.XXX\hspace{9.6 cm} Mr. Name\\
+Assistant Professor\hspace{8.0 cm}Assistant Professor\hspace{2.8 cm}\\Department of 
+ AD\hspace{7.9 cm} Department of AD
+\vspace{1.3 cm}\\
+.\hspace{11.25 cm}{ \bf Head of Department}
+\newline
+.\hspace{11.25 cm} Name
+\newline
+Place : Choondacherry  \hspace{7.12 cm} Assistant Professor
+\newline
+Date\hspace{0.25 cm}: 20-6-2023 \hspace{8.05 cm} Department of AD
+                
+\newpage
+\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{\numberline{}Acknowledgement}
+\begin{center}
+  \vspace*{1cm}
+  \textbf{\large Acknowledgement}
+\end{center}
+(You can specify the acknowledgement as you like to express. But you have
+to express acknowledgement towards Principal, HoD, Coordinators, Guide,
+any others you would like to, without mistake in their name.The following is
+a sample only. Those who would like to modify it in their own style may do
+it.)
+I wish to record my indebtedness and thankfulness to all who helped me prepare this Mini Project Report titled Mini Project Report Title and present it
+in a satisfactory way.
+I would like to convey my special gratitude to Dr. V.P. Devassia, Principal, SJCET, Palai,for the moral support he provided. I express my sincere
+thankfulness to Dr. Arun. P, Head of the department, Department of Electronics and Communication Engineering for his co-operation and valuable
+suggestions. Also I express my sincere thanks to Mini project co-ordinators
+Mr. Sreesh. P. R and Ms. Nitha M Biju for their helpful feedback and timely
+assistance.
+I am especially thankful to my guide, Assistant Professor, Department of Electronics & Communication Engineering for giving me valuable suggestions and critical inputs in the preparation of this report.
+I also extend my thanks to all my friends who helped me by giving motivation. Their smallest piece of advice was really valuable. Once again I convey
+my gratitude to all those persons who had directly or indirectly influenced
+my work as a whole.\\
+Student A\\
+Student B\\
+Student C
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%           The abstract page         %%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{\numberline{}Abstract}
+\begin{center}
+  \vspace*{1cm}
+  \textbf{\large Abstract}
+\end{center}
+Sample: A web application for managing various blood banks and donor-recipient operations efficiently is being focused. The project consists of a central repository of various blood deposits and donors available along with their associated details hosted on a cloud server. These details include donor name, blood type, medical details and location details. The project provides options to search and find whether a particular blood group is available in any of the blood banks or among the registered blood donors
+efficiently using cloud server. Search results would be listed
+based on the distance from the requester. The system generates emails requesting blood to the selected donors. Based on donor response and preference the system will provide the personal details, contact information and direction to each other using Google Geo location services. Moreover, the system will have added features such as posting blood campaign invitations on the dashboard and shows live blood request as a popup notification in the homepage. This online life saviour system is developed on PHP with Azure cloud platform and supported by Azure SQL database.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%    tableofcontents, listoffigures and listoftables       %%%%%%%%%
+%%%%%%%%        Command if you do not have  them                  %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\tableofcontents
+\printnomenclature
+\listoffigures
+\listoftables
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%   END OF FRONT PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
