@@ -5,58 +5,41 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setcounter{equation}{0}
 \section{System Description}
-Donating blood is a safe, simple, and rewarding experience. When we arrive at a blood donation centre we will be asked to complete a donor registration form, which includes the name, address, phone number, and various other types of demographic information. He/she will also be asked to show the donor card or the type of identification required by the particular blood bank you visit.
 
-\noindent Eligibility rules of the donor is to help protect the health and safety of the donor as well as the person who will receive a blood transfusion. Before donating, one of our medical professionals will discuss your health history with you in a private, confidential setting. After taking your pulse, blood pressure, and temperature and checking for anemia, we will determine whether you are eligible to be a donor. To donate blood or platelets, you must be in good general health, weigh at least 110 pounds, and be at least 16 years old. Parental consent is required for blood donation by 16 year old's, 16 year old's are not eligible to donate platelets. No parental consent is required for those who are at least 17 years old. If you are 76 or older, you will need your doctor’s written approval for blood or platelet donation. Blood donors must wait at least 56 days between blood donations and 7 days before donating platelets. Platelet donors may donate once every seven days, not to exceed six times in any eight-week period, and must wait 7 days before donating blood [3]. \par
+Our system uses a camera to accept images as input as per our requirements. This obtained input is then processed using the \textbf{img2table} library. Using this library, the cell coordinates are extracted and cropped to obtain the values inside the cell. These values are then given to the TensorFlow OCR model to accurately classify and predict the values that we obtained from the cell extraction step. The obtained result from this step is arranged specially in the format of CSV files.
+
+\section{Existing Solutions}
+Handwritten number recognition has great importance in many fields such as educational, financial, and governmental institutions [1]. Many researchers have attempted to do the same using different techniques, like the neural network fusion method, clustering algorithm methods, or methods based on support vector machines (SVM) [11]. But the above-mentioned methods have performed below the expected target value and have also failed to meet the recognition accuracy that we aim for.
+
+\noindent 
+Based on the research done, we have found that convolutional neural networks have provided great image recognition results and avoided all complications found in the traditional recognition methods. Traditional CNNs adopt activation functions like Softmax to perform the classification and recognition processes. But with development in this field of study by combining CNN with SVM [10], they have greatly improved model performance. But the elementary factor here is that these works are performed on a system with advanced hardware.
+\par
 \setlength{\parskip}{3ex}
 \noindent
-There are two types of blood donations- allogenic and directed. In 'allogenic' donation, a donor donates blood for storage in blood banks and this blood can be used for transfusion to any unknown recipient. In 'directed' donation, the donor is a relative or a family member of the recipient. There is a hybrid of these two called 'replacement donor' donation in which a friend or family member of the recipient donates blood to replace the stored blood used in transfusion, so that the availability of blood in blood banks is consistent. An event organized for people to donate blood is called a 'blood drive'.\par
+The proposed network focuses mainly on four arithmetic operations - addition, deduction, multiplication, and division [6]. To correctly execute all of these operations, we need to take images with better quality, with the cells of the pictures aligned properly so that the captured image is not misclassified. It goes through many stages of image recognition procedures like skew image correction, image segmentation [11], number recognition, training data acquisition, assignments check, and algorithm improvement.
+
+\par
 \setlength{\parskip}{3ex}
 
-%\subsection{Recipient and Donor Safety}
-Firstly, a consent for donation is obtained from the donor. The donor has to go through a series of questionnaire and tests to detect whether there are any health risks that can make the donation unsafe for the recipient. Donors are examined for symptoms of diseases such as HIV, malaria, and viral hepatitis, ie, diseases that can be transmitted in a transfusion.
-
+%\subsection{LeNet5}
 \noindent
-If a potential donor does not meet the specified criteria for health, they are 'deferred', ie, he/she may be allowed to donate later when the health criteria is met. The donor is examined and asked specific questions about their medical history to make sure that the process of blood donation will not result in any hazardous effects on them. The donor's hemoglobin level is tested to make sure that the loss of blood will not make them anemic.
-%\subsection{Blood Tests}
-\noindent The donor's blood type is usually identified as type A, B, AB, or O and Rh type is also identified. Tests including a crossmatch is usually done before a transfusion process. Type O negative is referred to as the "universal donor" in the case of red cell and whole blood transfusions. For plasma and platelet transfusions, AB positive is the universal platelet donor while both AB positive and AB negative are universal plasma donors.\par
+LeNet-5 is used as the basic structure for handwritten data in this literature review. It consists of an input layer, convolutional layers, pooling layers, fully connected layers, and an output layer. LeNet-5 is utilized to extract image features and enhance the performance of Convolutional Neural Networks (CNNs) in recognizing handwritten data. And the model's performance is determined by the optimization algorithm used. [6]
+
+%\subsection{Activation Functions}
+\noindent 
+Various activation functions are used and tested to check which helps provide better performance. Sigmoid and Tanh are exponential functions and hence require greater computation time than ReLU when calculating the error gradient of back-propagation. Another advantage is that it sets the final results of some neurons to be 0 which improves the network's sparsity, reduces overfitting possibilities, and the over-dependence on its parameters.
+\par
+
 %\section{Existing Solutions}
 \noindent
-The blood is tested for diseases including STDs [4]. A variety of tests for infections transmitted during transmission is also conducted. Sometimes multiple tests may be used for the determination of a single disease. At each donation, the following mandatory tests are performed:
+Usage of the ADAM (Adaptive moment estimation) optimizer can eliminate the issue of rendering different training dynamic values on batches that undergo stochastic gradient descent during the data training procedure. ADAM optimizer is the equivalent of momentum and root mean square propagation ($RMS_{prop}$). $RMS_{prop}$  is an adaptive learning method that was proposed by Geoffrey E. Hinton, the godfather of AI. It can be used to avoid the continuous accumulation of second-order momentum and improve training speed with a larger learning rate.
 
-\begin{itemize}
-\item Hepatitis B – HBsAg
-\item Human immunodeficiency virus – anti-HIV 1 and 2 and HIV NAT (nucleic acid testing)\nomenclature{HIV}{Human Immunodeficiency Virus}
-\item Hepatitis C – anti-HCV and HCV NAT
-\item Human T-cell lymphotropic virus – anti-HTLV I and II
-\item Syphilis – syphilis antibodies.
-\item Some donations are tested for cytomegalovirus (CMV)\nomenclature{CMV}{cytomegalovirus} antibodies to provide CMV negative blood for patients with certain types of impaired immunity.
-\end{itemize}
-
-%\subsection{Blood Collection}
+%\subsection{Result and Analysis}
 \noindent
-Blood is obtained from the donor mainly in two ways:
-\begin{itemize}
-\item The simplest way is to take the blood from a vein as whole blood. This blood is separated into parts, usually red blood cells and plasma, since most recipients need only a specific component for transfusions.
-\item The other method is to draw blood from the donor, separate it using a centrifuge or a filter, store the desired part, and return the rest to the donor. This process is called apheresis, and it is often done with a machine specifically designed for this purpose. This process is especially common for plasma and platelets.
-\end{itemize}
-
-%\subsection{Recovery and Time between Donations}
-\noindent
-Donors are observed for 10–15 minutes after donating since most reactions take place during or immediately after the donation. Blood centers typically provide refreshments or a lunch allowance to help the donor recover. The needle site is covered with a bandage and the donor is advised to keep the bandage on for some more time. Donors are also advised to avoid dehydration until a few hours after donation.
-
-%\subsection{Storage and Blood Shelf Life}
-\noindent
-The collected blood is stored in the blood bank as separate components, and some of these components have short shelf lives. There are no storage methods to keep platelets for extended periods of time(no more than seven days). Red blood cells (RBC), which is the most frequently used component, have a shelf life of 35–42 days at refrigerated temperatures. Plasma can be stored the longest (upto one year) and maintaining its supply not a problem.
+CNNs achieve accurate classification for both printed and handwritten fonts [9]. Instead of manual number recognition, the model accurately identifies operations and consistently performs well in recognizing the questions. The model was tested on the MNIST dataset [13], which consisted of 60,000 training sample images and 10,000 testing sample images. After optimization, the CNN's recognition rate increased by 7.3\% to reach 91.2\%, and the convergence speed of the model decreased from 250 to 200, indicating improved accuracy.
 
 
-
-\section{Existing solutions}
-There are some sources that provide an online platform for blood donation:
-\subsection{American Red Cross Blood Services}
- The website is owned by American National Red Cross Society which is a well renowned organization for health services. [5] This website can be used by individuals who are willing to donate blood. They conduct blood drives to collect blood from donors and distribute it to the needed blood banks. They collaborate with various events like Superbowl to avail offers to the people donating blood. This website also gives provision to the user to conduct blood drives and we can also register to be part of their activities as a volunteer. But they do not provide the option to perform a emergency blood request even though that is vital part of the whole process.
-% \subsection{Blood Bank India}
-The website [6] provides various facilities like searching availability of blood, donor registration, and requesting blood. Latest requests are shown when one opens the website, the recent donors are also referred. The website does not provide accurate location based search results and hence it will not be a reliable source in every scenario. There is no integration with blood banks. Any random user can obtain the contact details of donors without any steps of verification, and legitimacy of donors are not verified. 
-%\subsection{e-RaktKosh}
-e-RaktKosh is a Centralized Blood Bank Management System [7]. It is an initiative of Ministry of Health and Family Welfare. It provides details about blood banks all across the nation. The details include the availability of each blood groups. But the information provided is not accurate. They also provide contact details and location information about blood banks.
 \section{Summary}
+\noindent
+Thus we conclude that the CNN model with ReLU activation and ADAM optimizer is implemented on the MNIST dataset. The model is tested on four arithmetic operations - addition, deduction, multiplication, and division. The CNN model has also gained a reduction from 250 to 200 in convergence speed, and an increment from 83.9\% to 91.2\% in recognition accuracy.\\
+Future work can be applied to datasets containing handwritten English and Chinese characters. The CNN model can potentially save the teacher's time in evaluating the handwritten documents and can devote more time towards creating learning activities that can help benefit the students.

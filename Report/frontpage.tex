@@ -28,16 +28,16 @@
 \thispagestyle{empty}
 \begin{center}
  
-  {\Large \bf MINIPROJECT REPORT}
-
+{\Large \bf MINIPROJECT REPORT}\\
 ON\\
-  {\large \bf MiniProject Report Title\\ Title}
+{\large \bf Marks2CSV\\ A simple solution to convert tabular mark fields to CSV file}
 
    \vspace*{1 cm}
-   {\large Submitted by\\ { \bf STUDENT A (REG.NO.)}\\
-   { \bf STUDENT B (REG.NO.)}\\
-    { \bf STUDENT C (REG.NO.)}\\
-   { \bf STUDENT D (REG.NO.)}}\\[-0.6mm]
+   {\large Submitted by\\
+   { \bf Ajay T Shaju (SJC20AD004)}\\
+   { \bf Emil Saj Abraham (SJC20AD028)}\\
+   { \bf Justin Thomas Jo (SJC20AD046)}\\
+   { \bf Vishnuprasad K G (SJC20AD063)}}\\[-0.6mm]
   {\large to\\[-0.6mm] the APJ Abdul Kalam Technological University\\[-0.6mm] in partial fulfillment of the requirements for the award of the degree\\[-0.6mm] of\\[-0.6mm] Bachelor of Technology\\[-0.6mm] in\\[-0.6mm] {\bf Artificial Intelligence and Data Science}}
   %\vspace*{1cm}
   
@@ -83,19 +83,19 @@ ON\\
 {\large CERTIFICATE}\\[1.5cm]
 \end{center}
 \normalsize 
-This is to certify that the report entitled {\bf $"$Title$"$} submitted by { \bf Student A (SJC16CS004), Student B(SJC16CS012), Student C (SJC16CS033), and Student D (SJC16CS033)} to the APJ Abdul Kalam Technological University in partial fulfillment of the requirements for the award of the Degree of Bachelor of Technology in Artificial Intelligence and Data Science is a bonafide record of the project work carried out by them under my guidance and supervision.\vspace{1.3 cm}\\
+This is to certify that the report entitled {\bf $"$Marks2CSV$"$} submitted by { \bf Ajay T Shaju (SJC20AD004), Emil Saj Abraham (SJC20AD028), Justin Thomas Jo (SJC20-AD046), and Vishnuprasad KG (SJC20AD063)} to the APJ Abdul Kalam Technological University in partial fulfillment of the requirements for the award of the Degree of Bachelor of Technology in Artificial Intelligence and Data Science is a bonafide record of the project work carried out by them under my guidance and supervision.\vspace{1.3 cm}\\
 {\bf Project Guide}\hspace{8.4 cm}{\bf Project Coordinator}\\
-Mr.XXX\hspace{9.6 cm} Mr. Name\\
-Assistant Professor\hspace{8.0 cm}Assistant Professor\hspace{2.8 cm}\\Department of 
- AD\hspace{7.9 cm} Department of AD
+Dr.Deepa V\hspace{9.0 cm} Mr.Jacob Thomas\\
+Head of Department\hspace{7.6 cm}Assistant Professor\hspace{2.6 cm}\\Department of 
+ AD\hspace{7.9 cm}Department of AD
 \vspace{1.3 cm}\\
-.\hspace{11.25 cm}{ \bf Head of Department}
+.\hspace{11.01 cm}{ \bf Head of Department}
 \newline
-.\hspace{11.25 cm} Name
+.\hspace{11.01 cm} Dr.Deepa V
 \newline
-Place : Choondacherry  \hspace{7.12 cm} Assistant Professor
+Place : Choondacherry  \hspace{6.87 cm} Head of Department
 \newline
-Date\hspace{0.25 cm}: 20-6-2023 \hspace{8.05 cm} Department of AD
+Date\hspace{0.25 cm}: 28-6-2023 \hspace{7.9 cm} Department of AD
                 
 \newpage
 \thispagestyle{empty}
@@ -104,25 +104,18 @@ Date\hspace{0.25 cm}: 20-6-2023 \hspace{8.05 cm} Department of AD
   \vspace*{1cm}
   \textbf{\large Acknowledgement}
 \end{center}
-(You can specify the acknowledgement as you like to express. But you have
-to express acknowledgement towards Principal, HoD, Coordinators, Guide,
-any others you would like to, without mistake in their name.The following is
-a sample only. Those who would like to modify it in their own style may do
-it.)
-I wish to record my indebtedness and thankfulness to all who helped me prepare this Mini Project Report titled Mini Project Report Title and present it
-in a satisfactory way.
-I would like to convey my special gratitude to Dr. V.P. Devassia, Principal, SJCET, Palai,for the moral support he provided. I express my sincere
-thankfulness to Dr. Arun. P, Head of the department, Department of Electronics and Communication Engineering for his co-operation and valuable
-suggestions. Also I express my sincere thanks to Mini project co-ordinators
-Mr. Sreesh. P. R and Ms. Nitha M Biju for their helpful feedback and timely
-assistance.
-I am especially thankful to my guide, Assistant Professor, Department of Electronics & Communication Engineering for giving me valuable suggestions and critical inputs in the preparation of this report.
-I also extend my thanks to all my friends who helped me by giving motivation. Their smallest piece of advice was really valuable. Once again I convey
-my gratitude to all those persons who had directly or indirectly influenced
-my work as a whole.\\
-Student A\\
-Student B\\
-Student C
+I wish to record my indebtedness and thankfulness to all who helped me prepare this Mini Project Report titled Mark2CSV and present it in a satisfactory way. \\
+I would like to convey my special gratitude to Dr. V.P. Devassia, Principal, SJCET, Palai, for the moral support he provided. \\
+I express my sincere thankfulness to Dr. Deepa. V, Head of the department, Department of Artificial Intelligence \& Data Science for her cooperation and valuable suggestions. \\ 
+Also, I express my sincere thanks to the Mini project co-ordinator Mr. Jacob Thomas for his helpful feedback and timely assistance. \\
+I am especially thankful to my guide, Dr. Deepa. V, Head of the department, Department of Artificial Intelligence \& Data Science for giving me valuable suggestions and critical inputs in the preparation of this report. \\
+I also extend my thanks to all my friends who helped me by giving motivation. Their smallest piece of advice was really valuable. \\
+Once again I convey my gratitude to all those persons who had directly or indirectly influenced my work as a whole.\\
+\\
+Ajay T Shaju\\
+Emil Saj Abraham\\
+Justin Thomas Jo\\
+Vishnuprasad K G
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%           The abstract page         %%%%%%%%%%%%%%%%%%%%  
@@ -134,9 +127,12 @@ Student C
   \vspace*{1cm}
   \textbf{\large Abstract}
 \end{center}
-Sample: A web application for managing various blood banks and donor-recipient operations efficiently is being focused. The project consists of a central repository of various blood deposits and donors available along with their associated details hosted on a cloud server. These details include donor name, blood type, medical details and location details. The project provides options to search and find whether a particular blood group is available in any of the blood banks or among the registered blood donors
-efficiently using cloud server. Search results would be listed
-based on the distance from the requester. The system generates emails requesting blood to the selected donors. Based on donor response and preference the system will provide the personal details, contact information and direction to each other using Google Geo location services. Moreover, the system will have added features such as posting blood campaign invitations on the dashboard and shows live blood request as a popup notification in the homepage. This online life saviour system is developed on PHP with Azure cloud platform and supported by Azure SQL database.
+This project involves the development of a user-friendly software tool that utilizes Optical Character Recognition (OCR) technology to convert scanned images of answer papers into Excel sheets. The primary focus of the tool is to accurately extract marks written in specific boxes on the answer papers and organize them in a structured format for further analysis and manipulation.\\
+\\
+\noindent The primary objective of this project is to use Artificial Intelligence (AI) methods to solve a real-life problem that involves the manual entry of mark data by teachers. By employing advanced OCR algorithms and leveraging data processing techniques, the software tool aims to deliver reliable and precise results, thereby minimizing errors and ensuring the integrity of the extracted marks. This project holds significant potential in the field of education, particularly for educational institutions. The tool can streamline the labor-intensive task of grading exams by automating the process of extracting marks from answer papers. It offers educational institutions a reliable and efficient solution that saves time, reduces manual effort, and facilitates insightful analysis of the data.\\
+\\
+\noindent The software tool operates by capturing a picture of the front page of the answer sheet where the marks are written using a camera as input and then converting it using our proprietary methods. To enhance the usability and flexibility of the tool, widely-used frameworks such as TensorFlow, Numpy, and Pandas are utilized to organize and format the extracted marks. The end result is a comprehensive Excel sheet that faithfully represents the original content of the
+answer papers, making it effortless for users to edit, analyze, and evaluate the data. By combining cutting-edge OCR technology, robust data processing frameworks, and a user-friendly approach, this project aims to provide a software tool that revolutionizes the grading process in educational institutions, ultimately enhancing productivity and decision-making capabilities.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%    tableofcontents, listoffigures and listoftables       %%%%%%%%%
@@ -148,6 +144,7 @@ based on the distance from the requester. The system generates emails requesting
 \tableofcontents
 \printnomenclature
 \listoffigures
+\listofabbreviations
 \listoftables
 \clearpage
 
