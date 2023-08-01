@@ -28,22 +28,24 @@
 \thispagestyle{empty}
 \begin{center}
  
-{\Large \bf MINIPROJECT REPORT}\\
+{\normalsize \bf MINIPROJECT REPORT}\\
 ON\\
-{\large \bf Marks2CSV\\ A simple solution to convert tabular mark fields to CSV file}
+\vspace*{0.2 cm}
+{\huge \bf Marks2CSV}\\
+{\normalsize \bf A simple solution to convert tabular mark fields to CSV file}
 
-   \vspace*{1 cm}
-   {\large Submitted by\\
+   \vspace{0.5 cm}
+   \large Submitted by\\
    { \bf Ajay T Shaju (SJC20AD004)}\\
    { \bf Emil Saj Abraham (SJC20AD028)}\\
    { \bf Justin Thomas Jo (SJC20AD046)}\\
-   { \bf Vishnuprasad K G (SJC20AD063)}}\\[-0.6mm]
+   { \bf Vishnuprasad K G (SJC20AD063)}\\[-0.6mm]
   {\large to\\[-0.6mm] the APJ Abdul Kalam Technological University\\[-0.6mm] in partial fulfillment of the requirements for the award of the degree\\[-0.6mm] of\\[-0.6mm] Bachelor of Technology\\[-0.6mm] in\\[-0.6mm] {\bf Artificial Intelligence and Data Science}}
   %\vspace*{1cm}
   
   % Put your university logo here if you wish.
    \begin{center}
-   \includegraphics[width=0.3\textwidth]{Images/SJCET_logo.jpg}
+   \includegraphics[width=0.3\textwidth]{Images/SJCET_logo.png}
    \end{center}
    \vspace*{-0.5cm}
   {\LARGE {\bf Department of Artificial Intelligence and Data Science}}\\
@@ -78,24 +80,23 @@ ON\\
 \normalsize
  { DEPARTMENT OF ARTIFICIAL INTELLIGENCE AND DATA SCIENCE}\\[1.0cm]% Put your university logo here if you wish.
    \begin{center}
-   \includegraphics{Images/SJCET_logo.jpg}
+   \includegraphics[width=0.3\textwidth]{Images/SJCET_logo.png}
    \end{center}
 {\large CERTIFICATE}\\[1.5cm]
 \end{center}
 \normalsize 
-This is to certify that the report entitled {\bf $"$Marks2CSV$"$} submitted by { \bf Ajay T Shaju (SJC20AD004), Emil Saj Abraham (SJC20AD028), Justin Thomas Jo (SJC20-AD046), and Vishnuprasad KG (SJC20AD063)} to the APJ Abdul Kalam Technological University in partial fulfillment of the requirements for the award of the Degree of Bachelor of Technology in Artificial Intelligence and Data Science is a bonafide record of the project work carried out by them under my guidance and supervision.\vspace{1.3 cm}\\
-{\bf Project Guide}\hspace{8.4 cm}{\bf Project Coordinator}\\
+This is to certify that the report entitled {\bf $"$Marks2CSV$"$} submitted by { \bf Ajay T Shaju (SJC20AD004), Emil Saj Abraham (SJC20AD028), Justin Thomas Jo (SJC20-AD046), and Vishnuprasad KG (SJC20AD063)} to the APJ Abdul Kalam Technological University in partial fulfillment of the requirements for the award of the Degree of Bachelor of Technology in Artificial Intelligence and Data Science is a bonafide record of the miniproject carried out by them under my guidance and supervision.\vspace{1.3 cm}\\
+{\bf Project Guide}\hspace{8.35 cm}{\bf Project Coordinator}\\
 Dr.Deepa V\hspace{9.0 cm} Mr.Jacob Thomas\\
-Head of Department\hspace{7.6 cm}Assistant Professor\hspace{2.6 cm}\\Department of 
- AD\hspace{7.9 cm}Department of AD
+Head of the Department\hspace{6.85 cm}Assistant Professor\hspace{2.6 cm}\\Department of AD\hspace{7.9 cm}Department of AD
 \vspace{1.3 cm}\\
-.\hspace{11.01 cm}{ \bf Head of Department}
+.\hspace{11.06 cm}{\bf Head of the Department}
 \newline
 .\hspace{11.01 cm} Dr.Deepa V
 \newline
-Place : Choondacherry  \hspace{6.87 cm} Head of Department
+Place : Choondacherry  \hspace{6.87 cm} Assistant Professor
 \newline
-Date\hspace{0.25 cm}: 28-6-2023 \hspace{7.9 cm} Department of AD
+Date\hspace{0.25 cm}: 03-08-2023 \hspace{7.7 cm} Department of AD
                 
 \newpage
 \thispagestyle{empty}
@@ -104,18 +105,15 @@ Date\hspace{0.25 cm}: 28-6-2023 \hspace{7.9 cm} Department of AD
   \vspace*{1cm}
   \textbf{\large Acknowledgement}
 \end{center}
-I wish to record my indebtedness and thankfulness to all who helped me prepare this Mini Project Report titled Mark2CSV and present it in a satisfactory way. \\
-I would like to convey my special gratitude to Dr. V.P. Devassia, Principal, SJCET, Palai, for the moral support he provided. \\
-I express my sincere thankfulness to Dr. Deepa. V, Head of the department, Department of Artificial Intelligence \& Data Science for her cooperation and valuable suggestions. \\ 
-Also, I express my sincere thanks to the Mini project co-ordinator Mr. Jacob Thomas for his helpful feedback and timely assistance. \\
-I am especially thankful to my guide, Dr. Deepa. V, Head of the department, Department of Artificial Intelligence \& Data Science for giving me valuable suggestions and critical inputs in the preparation of this report. \\
-I also extend my thanks to all my friends who helped me by giving motivation. Their smallest piece of advice was really valuable. \\
-Once again I convey my gratitude to all those persons who had directly or indirectly influenced my work as a whole.\\
-\\
-Ajay T Shaju\\
-Emil Saj Abraham\\
-Justin Thomas Jo\\
+We wish to record our indebtedness and thankfulness to all who helped us complete this Mini Project work titled Mark2CSV. We would like to convey our special gratitude to Dr.~V.P. Devassia, Principal, SJCET, Palai, for the facilities. We express our sincere thankfulness to Dr. Deepa. V, Head of the department, Department of Artificial Intelligence \& Data Science for her cooperation and valuable suggestions. Also, we express our sincere thanks to the Mini project co-ordinator Mr. Jacob Thomas for his helpful feedback and timely assistance.
+We are especially thankful to our guide, Dr. Deepa. V, Head of the department, Department of Artificial Intelligence \& Data Science for giving us valuable suggestions and critical inputs through guidance and support. We also extend our thanks to Dr. Mervin Joe Thomas, Postdoctoral Research Fellow, Indian Institute of Technology Palakkad, and Mr. Mithun M Sanjeev, Senior Software Engineer, Bosch Bengaluru for their amazing thoughts and help, and we thank all our friends and others who directly or indirectly helped us during our mini-project work.
+ \\
+\begin{flushright}
+Ajay T Shaju \\
+Emil Saj Abraham \\
+Justin Thomas Jo \\
 Vishnuprasad K G
+\end{flushright}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%           The abstract page         %%%%%%%%%%%%%%%%%%%%  
@@ -124,15 +122,22 @@ Vishnuprasad K G
 \thispagestyle{empty}
 \addcontentsline{toc}{chapter}{\numberline{}Abstract}
 \begin{center}
-  \vspace*{1cm}
+  % \vspace*{0.5cm}
   \textbf{\large Abstract}
 \end{center}
-This project involves the development of a user-friendly software tool that utilizes Optical Character Recognition (OCR) technology to convert scanned images of answer papers into Excel sheets. The primary focus of the tool is to accurately extract marks written in specific boxes on the answer papers and organize them in a structured format for further analysis and manipulation.\\
-\\
-\noindent The primary objective of this project is to use Artificial Intelligence (AI) methods to solve a real-life problem that involves the manual entry of mark data by teachers. By employing advanced OCR algorithms and leveraging data processing techniques, the software tool aims to deliver reliable and precise results, thereby minimizing errors and ensuring the integrity of the extracted marks. This project holds significant potential in the field of education, particularly for educational institutions. The tool can streamline the labor-intensive task of grading exams by automating the process of extracting marks from answer papers. It offers educational institutions a reliable and efficient solution that saves time, reduces manual effort, and facilitates insightful analysis of the data.\\
-\\
-\noindent The software tool operates by capturing a picture of the front page of the answer sheet where the marks are written using a camera as input and then converting it using our proprietary methods. To enhance the usability and flexibility of the tool, widely-used frameworks such as TensorFlow, Numpy, and Pandas are utilized to organize and format the extracted marks. The end result is a comprehensive Excel sheet that faithfully represents the original content of the
-answer papers, making it effortless for users to edit, analyze, and evaluate the data. By combining cutting-edge OCR technology, robust data processing frameworks, and a user-friendly approach, this project aims to provide a software tool that revolutionizes the grading process in educational institutions, ultimately enhancing productivity and decision-making capabilities.
+The project focuses mainly on handwritten number identification, which address one of the most daunting challenges faced by any institution in this world - recognition and classification of handwritten digits from answer scripts. The proposed system can implement the idea of handwritten digit recognition for the pressing problem faced by educators in educational institutions – the manual mark entry. The need for a transformative solution to streamline and enhance the efficiency of the mark entry process in colleges was recognized, through extensive research and analysis.
+
+\vspace{3mm}
+
+\noindent The idea of a user-friendly software tool that harnesses the power of OCR technology in conjunction with state-of-the-art AI to convert images of mark cells on answer scripts of our college into a CSV file with minimal intervention of teachers, was conceived. The system aims to simplify the entire mark entry process by providing a user-friendly interface for teachers to capture images of the answer scripts using a camera that converts the obtained images of marks into data that will be stored in a CSV file. The resulting CSV file represents the original content of the answer scripts, enabling the teachers to effortlessly edit, analyze, and evaluate the mark data.
+
+\vspace{3mm}
+
+\noindent The approach taken involved implementing advanced OCR algorithms, fine-tuned to extract mark cells on answer scripts with utmost precision and reliability. Leveraging cutting-edge frameworks such as TensorFlow, Numpy, and Pandas, a seamless pipeline was engineered to efficiently organize and format the extracted data. The necessary features were only selected from the extracted data using a CNN model, which was built from scratch. The result was an output that depicted that the model performed better compared to the existing solutions available. It also exhibited remarkable flexibility, allowing for effortless customization to cater to the specific needs of users.
+
+\vspace{3mm}
+
+\noindent In summary, this project aims to reduce the time consumed for the mark entry process in educational institutions. While the focus initially was laid on transforming the mark data entry procedures within educational institutions, one can envision a future where the modular system finds applications in diverse domains, simplifying complex data handling tasks and alleviating manual labor on a grand scale.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%    tableofcontents, listoffigures and listoftables       %%%%%%%%%
@@ -152,12 +157,3 @@ answer papers, making it effortless for users to edit, analyze, and evaluate the
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%   END OF FRONT PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-
-
-
-
-
