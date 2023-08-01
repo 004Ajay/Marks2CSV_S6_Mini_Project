@@ -1,0 +1,34 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                               % 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{dmathesis}
+%% uncomment the following line to print equation labels next to
+%% equation numbers. 
+\usepackage{showlabel}
+%% The following is to control the format of your thesis
+\input{format}
+
+%% File to be included while running latex.
+\includeonly{append}
+
+\begin{document}
+%% Front page of thesis
+
+\renewcommand{\contentsname}{Table of Contents}
+
+\input{frontpage}
+
+%% Main text
+% set page number starts from 1
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%% To ensure the equation counter works correctly
+\eqlabon
+\eqlaboff
+
+%\include{chapter6}
+%\include{conclusion}
+\include{append}
+
+\end{document}
