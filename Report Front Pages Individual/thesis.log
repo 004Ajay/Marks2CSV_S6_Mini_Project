@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.24)  2 AUG 2023 08:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.24)  2 AUG 2023 10:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -282,52 +282,27 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 <Images/SJCET_logo.png, id=1, 1138.13205pt x 1138.13205pt>
 File: Images/SJCET_logo.png Graphic file (type png)
 <use Images/SJCET_logo.png>
-Package pdftex.def Info: Images/SJCET_logo.png  used on input line 39.
+Package pdftex.def Info: Images/SJCET_logo.png  used on input line 121.
 (pdftex.def)             Requested size: 136.5746pt x 136.56995pt.
  [1
 
 {C:/Users/ASUS/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Images/SJCET_logo.png>]
 File: Images/SJCET_logo.png Graphic file (type png)
 <use Images/SJCET_logo.png>
-Package pdftex.def Info: Images/SJCET_logo.png  used on input line 56.
+Package pdftex.def Info: Images/SJCET_logo.png  used on input line 138.
 (pdftex.def)             Requested size: 136.5746pt x 136.56995pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 143.
  (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 143.
  (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 61.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 143.
  (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (0.78377pt too wide) in paragraph at lines 61--73
-\OT1/cmr/bx/n/12 (SJC20AD004), Emil Saj Abra-ham (SJC20AD028), Justin Thomas Jo (SJC20-
- []
-
-
-Overfull \hbox (3.38774pt too wide) in paragraph at lines 61--73
-\OT1/cmr/m/n/12 . \OT1/cmr/bx/n/12 Head of the De-part-ment 
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 82--85
-
- []
-
-[3]
-File: Images/SJCET_logo.png Graphic file (type png)
-<use Images/SJCET_logo.png>
-Package pdftex.def Info: Images/SJCET_logo.png  used on input line 121.
-(pdftex.def)             Requested size: 136.5746pt x 136.56995pt.
- [4]
-File: Images/SJCET_logo.png Graphic file (type png)
-<use Images/SJCET_logo.png>
-Package pdftex.def Info: Images/SJCET_logo.png  used on input line 138.
-(pdftex.def)             Requested size: 136.5746pt x 136.56995pt.
-
 Overfull \hbox (0.78377pt too wide) in paragraph at lines 143--155
 \OT1/cmr/bx/n/12 (SJC20AD004), Emil Saj Abra-ham (SJC20AD028), Justin Thomas Jo (SJC20-
  []
@@ -337,17 +312,17 @@ Overfull \hbox (3.38774pt too wide) in paragraph at lines 143--155
 \OT1/cmr/m/n/12 . \OT1/cmr/bx/n/12 Head of the De-part-ment 
  []
 
-[5]
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 164--167
 
  []
 
-[6]
+[3]
 File: Images/SJCET_logo.png Graphic file (type png)
 <use Images/SJCET_logo.png>
 Package pdftex.def Info: Images/SJCET_logo.png  used on input line 202.
 (pdftex.def)             Requested size: 136.5746pt x 136.56995pt.
- [7]
+ [4]
 File: Images/SJCET_logo.png Graphic file (type png)
 <use Images/SJCET_logo.png>
 Package pdftex.def Info: Images/SJCET_logo.png  used on input line 219.
@@ -357,17 +332,17 @@ Overfull \hbox (3.38774pt too wide) in paragraph at lines 224--236
 \OT1/cmr/m/n/12 . \OT1/cmr/bx/n/12 Head of the De-part-ment 
  []
 
-[8]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 245--248
 
  []
 
-[9]
+[6]
 File: Images/SJCET_logo.png Graphic file (type png)
 <use Images/SJCET_logo.png>
 Package pdftex.def Info: Images/SJCET_logo.png  used on input line 284.
 (pdftex.def)             Requested size: 136.5746pt x 136.56995pt.
- [10]
+ [7]
 File: Images/SJCET_logo.png Graphic file (type png)
 <use Images/SJCET_logo.png>
 Package pdftex.def Info: Images/SJCET_logo.png  used on input line 302.
@@ -377,17 +352,17 @@ Overfull \hbox (3.38774pt too wide) in paragraph at lines 307--319
 \OT1/cmr/m/n/12 . \OT1/cmr/bx/n/12 Head of the De-part-ment 
  []
 
-[11]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 328--331
 
  []
 
-[12]
+[9]
 File: Images/SJCET_logo.png Graphic file (type png)
 <use Images/SJCET_logo.png>
 Package pdftex.def Info: Images/SJCET_logo.png  used on input line 366.
 (pdftex.def)             Requested size: 136.5746pt x 136.56995pt.
- [13]
+ [10]
 File: Images/SJCET_logo.png Graphic file (type png)
 <use Images/SJCET_logo.png>
 Package pdftex.def Info: Images/SJCET_logo.png  used on input line 385.
@@ -397,12 +372,12 @@ Overfull \hbox (3.38774pt too wide) in paragraph at lines 390--402
 \OT1/cmr/m/n/12 . \OT1/cmr/bx/n/12 Head of the De-part-ment 
  []
 
-[14]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 411--414
 
  []
 
-[15])
+[12])
 \openout2 = `append.aux'.
 
  (append.tex) (thesis.aux (append.aux))
@@ -420,9 +395,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  115i,5n,110p,754b,310s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on thesis.pdf (15 pages, 3957906 bytes).
+Output written on thesis.pdf (12 pages, 3953600 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
