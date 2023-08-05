@@ -1,6 +1,6 @@
-PWD d:\AJAYMON\AJAY\Programming\S6_Mini_Project\Report Front Pages Individual
+PWD d:\AJAYMON\AJAY\Programming\Marks2CSV_S6_Mini_Project\Report Front Pages Individual
 INPUT C:\Users\ASUS\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\AJAYMON\AJAY\Programming\S6_Mini_Project\Report Front Pages Individual\thesis.tex
+INPUT d:\AJAYMON\AJAY\Programming\Marks2CSV_S6_Mini_Project\Report Front Pages Individual\thesis.tex
 OUTPUT thesis.log
 INPUT .\dmathesis.cls
 INPUT dmathesis.cls
@@ -159,6 +159,14 @@ INPUT C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex\latex\base\ulasy.fd
 INPUT C:\Users\ASUS\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy10.tfm
 INPUT C:\Users\ASUS\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy8.tfm
 INPUT C:\Users\ASUS\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy6.tfm
+INPUT .\Images\SJCET_logo.png
+INPUT .\Images\SJCET_logo.png
+INPUT .\Images\SJCET_logo.png
+INPUT .\Images\SJCET_logo.png
+INPUT .\Images\SJCET_logo.png
+INPUT .\Images\SJCET_logo.png
+INPUT .\Images\SJCET_logo.png
+INPUT .\Images\SJCET_logo.png
 INPUT .\Images\SJCET_logo.png
 INPUT .\Images\SJCET_logo.png
 INPUT .\Images\SJCET_logo.png
