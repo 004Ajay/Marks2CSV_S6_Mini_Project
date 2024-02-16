@@ -34,48 +34,15 @@ Click the drop down to see contents
 
 </details>
 
----
-
-<br>
-
-## Programs
-
-* Big Model - Program that is able to convert a complete PDF file to CSV
-
-* Base Model - Program that runs on a single paper - used for Prototyping & Testing the approach
-
-* [Big Model - Input PDF, Output CSV](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Image%202%20Table/big%20model%20using%20customOCR%20--LATEST.ipynb)
-
-* [Neural Network - Training & Testing](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Neural%20Network/Train_Model_Final.ipynb)
-
-* [Base Model - using our CustomOCR](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Image%202%20Table/base%20model%20-%20single%20paper%20from%20start%20to%20end%20--%20LATEST.ipynb)
-
-* [Cell Extraction Program](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Cell%20Extraction/cell_extraction.ipynb)
-
-* [Image Resizer](https://github.com/004Ajay/S6_Mini_Project/blob/main/Codes/Cell%20Extraction/resize_image.ipynb)
-
-
-
----
-
 <br>
 
 ## Datasets
 
 * Files in ZIP format
 
-    * [Training Set](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/training_set.rar)
+    * [Training Set](https://github.com/004Ajay/Marks2CSV_S6_Mini_Project/blob/main/Datasets/train.zip)
 
-    * [Testing Set](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/testing_set.zip)
-
-    * [Kaggle Dataset](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/Kaggle_Dataset.zip)
-    
-    * [College Answer Sheet Dataset](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/College_Answer_Sheet_Dataset.zip)
-
-    * [Half Marks - College Answer Sheet](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/Ans_Sheet_Half_Marks.zip)
-
-    * [Mixed Dataset (College & Kaggle)](https://github.com/004Ajay/S6_Mini_Project/blob/main/Datasets/Mixed_Marks_Dataset.zip)
-
+    * [Testing Set](https://github.com/004Ajay/Marks2CSV_S6_Mini_Project/blob/main/Datasets/test.zip)
 
 ---
 
@@ -83,9 +50,9 @@ Click the drop down to see contents
 
 ## Problem & Solution
 
-* The Problem - Our teachers of SJCET Palai are wasting a good amount of their time entering marks scored by students on individual questions in an exam to excel sheets.
+* The Problem - Our teachers of SJCET Palai were spending a good amount of time entering marks scored by students on individual questions in an exam to excel sheets.
 
-* The Solution - We need to automate the task of entering the marks, for that we use a combination of detection, extraction & recognition algorithms
+* The Solution - An automated system for entering the marks, where we make use of detection, extraction, and arrangement algorithms on the front page of answer sheets.
 
 ---
 
