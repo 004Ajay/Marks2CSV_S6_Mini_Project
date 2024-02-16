@@ -95,34 +95,5 @@ Click the drop down to see contents
 
 [Vishnuprasad KG](https://github.com/VISHNUPRASAD-K-G)
 
-
-<!-- 
----
-
-## Working of the App
-
-* User starts the telegram bot (`bot_name`) → click or type `/start`
-* User sends the `PDF file` having front pages of Student's Marksheet
-* User waits to receive the `CSV file` containing students marks entered in respective columns
-* Names should be entered manually
-
----
-
-<br>
-
-## FAQ
-
-### Why not a `WhatsApp Bot`?
-
-WhatsApp also has good features of BOTS. But if we need to build a bot we need:
-
-* A separate mobile number to start WhatsApp Business account
-* WhatsApp Business API is paid
-* Lack of functionalities & developer support
-* Centralized, owned by Meta Platforms (Facebook)
-
-<br>
-
----
-
--->
+<p align="center">
+<img src="Mark2CSV Final Poster.png" title = "The Team"></p>
